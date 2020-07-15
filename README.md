@@ -8,7 +8,7 @@ Python 3
 
 Запуск тестов с параметрами окружения: python $SUITE $GRID_URL $TARGET_URL $BROWSER
 
-Параметры задаются в расписании: https://gitlab.digillect.com/my-salon/ui-tests/pipeline_schedules
+Параметры задаются в расписании: pipeline_schedules в git
 
 GRID_URL - адрес Selenium-сервера.
 
