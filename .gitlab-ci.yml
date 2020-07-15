@@ -1,0 +1,16 @@
+image: python:3
+
+before_script:
+  - pip install -U selenium
+  - pip install unittest-xml-reporting
+
+test_suite:
+  tags:
+    - docker
+  script:
+    - python $TEST_SUITE $GRID_URL $TARGET_URL $BROWSER
+  artifacts:
+    when: on_failure
+    paths: 
+      - results.xml
+    name: "$CI_BUILD_NAME"
